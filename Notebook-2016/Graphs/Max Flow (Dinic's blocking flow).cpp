@@ -2,6 +2,7 @@
 // INPUT: graph, constructed using AddEdge(), source, sink
 // OUTPUT: maximum flow value, 
 //         To obtain the actual flow, look at positive values only.
+// From Stanford University's notebook.
 
 typedef vector<int> VI;
 typedef vector<VI> VVI;
