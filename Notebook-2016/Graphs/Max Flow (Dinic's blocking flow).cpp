@@ -59,6 +59,14 @@ struct MaxFlow {
     }
 
     int GetMaxFlow(int source, int sink) {
+        /* to clean for subsequent executions
+        fill(Q.begin(), Q.end(), 0);
+        for (int i = 0; i < N; ++i)
+        {
+            fill(flow[i].begin(), flow[i].end(), 0);
+        }
+        */
+        
         int totflow = 0;
         while (int flow = BlockingFlow(source, sink))
             totflow += flow;
