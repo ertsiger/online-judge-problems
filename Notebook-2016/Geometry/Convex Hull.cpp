@@ -36,12 +36,7 @@ vector<P> convexhull(vector<P> v) { // v.SZ >= 2
 
 int main() {
     vector<P> v;
-    v.PB(MP(0, 1));
-    v.PB(MP(1, 2));
-    v.PB(MP(3, 2));
-    v.PB(MP(2, 1));
-    v.PB(MP(3, 1));
-    v.PB(MP(6, 3));
-    v.PB(MP(7, 0));
+    v.PB(MP(0, 1)); v.PB(MP(1, 2)); v.PB(MP(3, 2)); v.PB(MP(2, 1));
+    v.PB(MP(3, 1)); v.PB(MP(6, 3)); v.PB(MP(7, 0));
     vector<P> w = convexhull(v);
 } // resultado: (0,1) (7,0) (6,3) (1,2)
